@@ -33,5 +33,5 @@ function printArray(arr, len){
 }
 bubbleSort(arr,len);
 console.log("Sorted Array via BubbleSort: "+ arr);
-//console.log();
+//console.log("Sorted Array via BubbleSort: ");
 //printArray(arr,len);
