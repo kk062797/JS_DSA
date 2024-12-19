@@ -1,5 +1,5 @@
 const arr = [7,8,3,9,2];
-let len = arr.length
+let len = arr.length;
 
 function selectionSort(arr,len){
     for(let i = 0;i<len-1;i++){
