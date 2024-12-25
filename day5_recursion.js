@@ -31,9 +31,9 @@ console.log(res);
 
 //Using Recursion
 
-function findFactorialUsingRecursion(num){
-    
-    if(num === 0){
+function findFactorialUsingRecursion(num) {
+
+    if (num === 0) {
         return 1
     }
     return num * findFactorialUsingRecursion(--num);
