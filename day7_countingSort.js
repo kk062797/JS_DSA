@@ -8,7 +8,7 @@ for (let i = 0; i < len; i++) {
     currentVal = originalArray[i];
     countArray[currentVal]++;
 }
-console.log(countArray);
+//console.log(countArray);
 let sortedArray = [];
 for (let j = 0; j < countArray.length; j++) {
     let curr_Val = countArray[j];
