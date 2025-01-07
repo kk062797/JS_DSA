@@ -13,7 +13,7 @@ class SinglyLinkedList {
         this.length = 0;
     }
 
-    push(node) {
+    push(node) { // insert from end
         if (this.head) {
             //only if your list is not empty
             this.tail.next = node;
@@ -27,7 +27,7 @@ class SinglyLinkedList {
         this.length++;
     }
 
-    printList() {
+    printList() { // print the list
         if (this.length === 0) {
             console.log(`Current Head is: ${this.head}`);
             console.log(`Current Tail is: ${this.tail}`);
@@ -48,7 +48,7 @@ class SinglyLinkedList {
         }
     }
 
-    pop() {
+    pop() { // delete from start
         if (this.length === 1) { //if your list 1 item
             this.tail = null;
         }
@@ -63,7 +63,7 @@ class SinglyLinkedList {
         }
     }
 
-    searchNode(node) {
+    searchNode(node) { //search the node & its position
         let tempNode = this.head;
         let position = 0;
         while (tempNode != null) {
@@ -77,7 +77,7 @@ class SinglyLinkedList {
         console.log(`Node ${node} is not found.`);
     }
 
-    printNode(position) {
+    printNode(position) {  // print the node present at the particular position
         let tempNode = this.head;
         let count = 0;
         while (tempNode != null) {
@@ -91,7 +91,7 @@ class SinglyLinkedList {
         console.log("Position out of range");
     }
 
-    insertAtStart(node) {
+    insertAtStart(node) {  // insert at begining
         if (this.head) {
             let tempNode = this.head;
             node.next = tempNode;
